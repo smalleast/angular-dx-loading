@@ -71,9 +71,9 @@ angular.module('TestApp', ['nx.widget']);
 
 
     })
-    .controller('MainCtrl2', function ($http, $q, $rootScope, nxIsLoading) {
+    .controller('MainCtrl2', function ($http, $q, $rootScope, dxLoading) {
       //Solution 2:Or you can directly watch nxIsLoading.isLoading method:
-      $rootScope.$watch(nxIsLoading.isLoading,function(inValue){
+      $rootScope.$watch(dxLoading.isLoading,function(inValue){
         $rootScope.loading = inValue;
       });
 
